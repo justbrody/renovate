@@ -30,7 +30,9 @@
     "test-e2e": "npm pack && cd e2e && yarn install --no-lockfile --ignore-optional --prod && yarn test",
     "test-schema": "babel-node --extensions \".ts,.js\" -- test/json-schema.ts",
     "test": "run-s lint test-schema type-check jest",
-    "type-check": "tsc --noEmit"
+    "type-check": "tsc --noEmit",
+    "snyk-protect": "snyk protect",
+    "prepare": "yarn run snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -155,7 +157,8 @@
     "www-authenticate": "0.6.2",
     "xmldoc": "1.1.2",
     "yarn": "1.21.1",
-    "yawn-yaml": "1.4.0"
+    "yawn-yaml": "1.4.0",
+    "snyk": "^1.316.1"
   },
   "optionalDependencies": {
     "re2": "1.10.5"
@@ -292,5 +295,6 @@
       ]
     },
     "tagFormat": "${version}"
-  }
+  },
+  "snyk": true
 }
