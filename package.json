@@ -140,7 +140,7 @@
     "p-all": "2.1.0",
     "parse-diff": "0.6.0",
     "parse-link-header": "1.0.1",
-    "pnpm": "3.8.1",
+    "pnpm": "7.33.4",
     "registry-auth-token": "4.0.0",
     "semver": "6.3.0",
     "semver-stable": "3.0.0",
